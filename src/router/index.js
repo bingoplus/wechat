@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Holiday from '@/components/holiday'
+import Holiday from '@/components/holiday/holiday'
 import Vacation from '@/components/vacation'
 import User from '@/components/user'
 
