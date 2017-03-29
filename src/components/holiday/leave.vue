@@ -1,42 +1,46 @@
 <template>
-  <div class="holiday" v-if=leaveTag>
-    <div class="holiday-success">登记成功!</div>
+  <div class="register" v-if=leaveTag>
+    <div class="register-success">登记成功!</div>
     <sub>
       <mt-button type="primary" @click="back">返回</mt-button>
     </sub>
   </div>
-  <div class="holiday" v-else>
+  <div class="register" v-else>
     <section>
-      <div class="holiday-second-title">离校目的地</div>
-      <div class="holiday-second-content">
-        <div class="blue-content" @click="setAddress">
-          <mt-cell
-            title="省份"
-            v-model="address.province.name"
-            is-link>
-          </mt-cell>
-        </div>
-        <div class="blue-content" @click="setAddress">
-          <mt-cell
-            title="城市"
-            v-model="address.city.name"
-            is-link>
-          </mt-cell>
-        </div>
-        <div class="blue-content" @click="setAddress">
-          <mt-cell
-            title="区县"
-            v-model="address.county.name"
-            is-link>
-          </mt-cell>
-        </div>
-        <div class="blue-content" @click="setAddress">
-          <mt-cell
-            title="街道/乡镇"
-            v-model="address.town.name"
-            is-link>
-          </mt-cell>
-        </div>
+      <div class="register-title fl clearfix">离校目的地</div>
+      <mt-radio
+        v-model="leaveType"
+        :options="['回家', '其他']">
+      </mt-radio>
+      <div class="register-content">
+          <div class="blue-content" @click="setAddress">
+            <mt-cell
+              title="省份"
+              v-model="address.province.name"
+              is-link>
+            </mt-cell>
+          </div>
+          <div class="blue-content" @click="setAddress">
+            <mt-cell
+              title="城市"
+              v-model="address.city.name"
+              is-link>
+            </mt-cell>
+          </div>
+          <div class="blue-content" @click="setAddress">
+            <mt-cell
+              title="区县"
+              v-model="address.county.name"
+              is-link>
+            </mt-cell>
+          </div>
+          <div class="blue-content" @click="setAddress">
+            <mt-cell
+              title="街道/乡镇"
+              v-model="address.town.name"
+              is-link>
+            </mt-cell>
+          </div>
         <div class="blue-content">
           <mt-field placeholder="请输入详细地址" type="textarea" v-model="vacationRecord.address" rows="3"></mt-field>
         </div>
@@ -51,8 +55,8 @@
       </mt-popup>
     </section>
     <section>
-      <div class="holiday-second-title">离校交通工具</div>
-      <div class="holiday-second-content blue-content" @click="showTool()">
+      <div class="register-title">离校交通工具</div>
+      <div class="register-content blue-content" @click="showTool()">
         <mt-cell
           title="交通工具"
           v-model="leaveTool"
@@ -69,8 +73,8 @@
       </mt-popup>
     </section>
     <section>
-      <div class="holiday-second-title">离校时间段</div>
-      <div class="holiday-second-content">
+      <div class="register-title">离校时间段</div>
+      <div class="register-content">
         <div class="blue-content" @click="openStartPicker">
           <mt-cell
             title="离校时间"
@@ -100,20 +104,20 @@
       </div>
     </section>
     <section>
-      <div class="holiday-second-title">离校原因</div>
-      <div class="holiday-second-content">
+      <div class="register-title">离校原因</div>
+      <div class="register-content blue-content">
         <mt-field placeholder="请输入离校原因" type="textarea" rows="3" v-model="vacationRecord.reason"></mt-field>
       </div>
     </section>
     <section>
-      <div class="holiday-second-title">本人联系电话</div>
-      <div class="holiday-second-content">
+      <div class="register-title">本人联系电话</div>
+      <div class="register-content blue-content">
         <mt-field placeholder="请输入本人联系电话" type="tel" v-model="vacationRecord.phone"></mt-field>
       </div>
     </section>
     <section>
-      <div class="holiday-second-title">家庭联系电话</div>
-      <div class="holiday-second-content">
+      <div class="register-title">家庭联系电话</div>
+      <div class="register-content blue-content">
         <mt-field placeholder="请输入家庭联系电话" type="tel" v-model="vacationRecord.homePhone"></mt-field>
       </div>
     </section>
@@ -128,6 +132,7 @@
     name: 'Leave',
     data () {
       return {
+        leaveType: '回家',
         temTool: {},
         temProvince: {},
         temCity: {},

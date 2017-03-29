@@ -24,13 +24,14 @@
       <Leave></Leave>
     </section>
     <section class="stay" v-show="status.stayTag">
-
+      <Stay></Stay>
     </section>
   </div>
 </template>
 
 <script>
   import Leave from './leave'
+  import Stay from './stay'
   export default{
     name: 'Holiday',
     data () {
@@ -51,7 +52,8 @@
       }
     },
     components: {
-      Leave
+      Leave,
+      Stay
     }
   }
 </script>

@@ -71,7 +71,8 @@ module.exports = {
           'style-loader',
           'css-loader',
           'autoprefixer-loader'
-        ]
+        ],
+        include: [resolve('node_modules')]
       },
       {
         test: /\.less$/,
