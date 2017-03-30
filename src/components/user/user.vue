@@ -62,25 +62,28 @@
 	  data () {
 	    return {
 	      user: {
-	        name: '李雷雷',
-	        sn: '20160210102302',
-	        phone: '13502020202',
-	        email: 'lileilei@163.com'
+	        name: '',
+	        sn: '',
+	        phone: '',
+	        email: ''
 	      }
 	    }
 	  },
 	  methods: {
 	    getUser () {
-	      this.$http.get('./user')
+	      this.$http.get('/user/info')
           .then(
             res => {
-              this.user.name = res.content.name
-              this.user.sn = res.content.sn
-              this.user.phone = res.content.phone
-              this.user.email = res.content.name
+              this.user.name = res.data.data.name
+              this.user.sn = res.data.data.sn
+              this.user.phone = res.data.data.phone
+              this.user.email = res.data.data.email
             }
           )
 	    }
-	  }
+	  },
+  created: function () {
+    this.getUser()
+  }
 	}
 </script>

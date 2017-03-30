@@ -20,11 +20,14 @@
         <mt-button type="primary" @click="registerLeave">登记离校</mt-button>
       </sub>
     </section>
-    <section class="leave" v-show="status.leaveTag">
+    <section v-show="status.leaveTag">
       <Leave></Leave>
     </section>
-    <section class="stay" v-show="status.stayTag">
+    <section v-show="status.stayTag">
       <Stay></Stay>
+    </section>
+    <section v-show="status.backTag">
+      <Back></Back>
     </section>
   </div>
 </template>
@@ -32,6 +35,7 @@
 <script>
   import Leave from './leave'
   import Stay from './stay'
+  import Back from './back'
   export default{
     name: 'Holiday',
     data () {
@@ -39,8 +43,9 @@
         status: {
           tipTag: false,
           holidayTag: false,
-          leaveTag: true,
+          leaveTag: false,
           stayTag: false,
+          backTag: true,
           registerStayTag: false
         },
         vacation: {
@@ -53,7 +58,8 @@
     },
     components: {
       Leave,
-      Stay
+      Stay,
+      Back
     }
   }
 </script>

@@ -36,17 +36,6 @@ module.exports = {
           formatter: require('eslint-friendly-formatter')
         }
       },
-      /*{
-          // https://vue-loader.vuejs.org/en/configurations/extract-css.html
-          test: /\.vue$/,
-          loader: 'vue-loader',
-          options: {
-              loaders: {
-                  css: 'vue-style-loader!css-loader',
-                  less: 'vue-style-loader!css-loader!less-loader'
-              }
-          }
-      },*/
       {
         test: /\.vue$/,
         loader: 'vue-loader',
@@ -64,23 +53,6 @@ module.exports = {
           limit: 10000,
           name: utils.assetsPath('img/[name].[hash:7].[ext]')
         }
-      },
-      {
-        test: /\.css$/,
-        use: [
-          'style-loader',
-          'css-loader',
-          'autoprefixer-loader'
-        ],
-        include: [resolve('node_modules')]
-      },
-      {
-        test: /\.less$/,
-        use: [
-          'style-loader',
-          'css-loader',
-          'less-loader'
-        ]
       },
       {
         test: /\.(woff2?|eot|ttf|otf)(\?.*)?$/,
