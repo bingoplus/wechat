@@ -1,6 +1,6 @@
 <template>
   <div class="inner">
-    <div class="register" v-if=!stay>
+    <div class="register" v-if="!stay">
       <section>
         <div v-show="threeTag" @click="stay=true;stayTag=true;">您最近提交的请假条未通过申请</div>
         <div class="register-title">请假是否需要离校</div>
@@ -127,55 +127,64 @@
         <mt-button type="primary" @click="commitStay">提交假条</mt-button>
       </sub>
     </div>
-    <div v-else-if=stayTag class="vacation">
+    <div v-else-if="stayTag" class="register">
       <ul>
         <li v-show="isLeaveTag">
-          <div class="vacation-left"></div>
-          <div class="vacation-right">
+          <div class="register-left"></div>
+          <div class="register-right">
             <div>离校目的地</div>
             <div>{{vacation.address}}</div>
           </div>
         </li>
         <li v-show="isLeaveTag">
-          <div class="vacation-left"></div>
-          <div class="vacation-right">
+          <div class="register-left"></div>
+          <div class="register-right">
             <div>离校交通工具</div>
             <div>{{vacation.vehicle}}</div>
           </div>
         </li>
         <li>
-          <div class="vacation-left"></div>
-          <div class="vacation-right">
+          <div class="register-left"></div>
+          <div class="register-right">
             <div>请假时间区间</div>
             <div>{{vacation.startTime}}-{{vacation.endTime}}</div>
           </div>
         </li>
         <li>
-          <div class="vacation-left"></div>
-          <div class="vacation-right">
+          <div class="register-left"></div>
+          <div class="register-right">
             <div>请假事由</div>
-            <div class="vacation-exp">{{vacation.event}}</div>
+            <div class="register-exp">{{vacation.event}}</div>
+          </div>
+        </li>
+        <li>
+          <div class="register-left  register-left2"></div>
+          <div class="register-right register-right2">
+            <div>请假审核意见</div>
+            <div class="register-exp">通过辅导员审核</div>
+            <div class="register-exp">等待学院审核</div>
+            <div class="register-exp">等待学校审核</div>
           </div>
         </li>
         <li v-show="oneTag">
-          <div class="vacation-left vacation-left2"></div>
-          <div class="vacation-right vacation-right2">
+          <div class="register-left register-left2"></div>
+          <div class="register-right register-right2">
             <div>待审核</div>
             <div></div>
           </div>
         </li>
         <li v-show="twoTag">
-          <div class="vacation-left3"></div>
-          <div class="vacation-right vacation-right3">
+          <div class="register-left3"></div>
+          <div class="register-right register-right3">
             <div>已通过审核</div>
             <div>{{passReason}}</div>
           </div>
         </li>
         <li v-show="threeTag">
-          <div class="vacation-left4"></div>
-          <div class="vacation-right vacation-right4">
+          <div class="register-left4"></div>
+          <div class="register-right register-right4">
             <div>未审核通过</div>
-            <div class="vacation-exp">{{passReason}}</div>
+            <div class="register-exp">{{passReason}}</div>
           </div>
         </li>
       </ul>
@@ -237,12 +246,12 @@
         vacationTag2: false,
         vacation: {
           id: '',
-          startTime: '',
-          endTime: '',
-          event: '',
-          vehicle: '',
-          reason: '',
-          address: ''
+          startTime: '2017.1.30',
+          endTime: '2017.30.8',
+          event: '45464646',
+          vehicle: '飞机',
+          reason: '家里有事',
+          address: '河南省焦作市'
         },
         vacationRecord2: {
 

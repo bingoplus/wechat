@@ -5,7 +5,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/vacation/vacation.vue" afterPath="$PROJECT_DIR$/src/components/vacation/vacation.vue" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/styles/components/holiday.less" afterPath="$PROJECT_DIR$/src/styles/components/holiday.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/styles/components/user.less" afterPath="$PROJECT_DIR$/src/styles/components/user.less" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -69,11 +68,10 @@
           <file leaf-file-name="vacation.vue" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/components/vacation/vacation.vue">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="350">
-                  <caret line="207" column="22" lean-forward="true" selection-start-line="207" selection-start-column="22" selection-end-line="207" selection-end-column="22" />
+                <state relative-caret-position="425">
+                  <caret line="164" column="50" lean-forward="true" selection-start-line="164" selection-start-column="50" selection-end-line="164" selection-end-column="50" />
                   <folding>
                     <element signature="n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
-                    <element signature="n#div#1;n#div#0;n#template#0;n#!!top" expanded="false" />
                     <element signature="n#div#2;n#div#0;n#template#0;n#!!top" expanded="false" />
                   </folding>
                 </state>
@@ -121,7 +119,7 @@
             <entry file="file://$PROJECT_DIR$/src/components/holiday/stay.vue">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="1700">
-                  <caret line="109" column="18" lean-forward="true" selection-start-line="109" selection-start-column="18" selection-end-line="109" selection-end-column="47" />
+                  <caret line="109" column="18" lean-forward="false" selection-start-line="109" selection-start-column="18" selection-end-line="109" selection-end-column="47" />
                   <folding>
                     <element signature="n#div#0;n#transition-group#0;n#div#1;n#section#0;n#div#1;n#template#0;n#!!top" expanded="false" />
                     <element signature="n#div#1;n#transition-group#0;n#div#1;n#section#0;n#div#1;n#template#0;n#!!top" expanded="false" />
@@ -148,7 +146,7 @@
             <entry file="file://$PROJECT_DIR$/package.json">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="1350">
-                  <caret line="54" column="30" lean-forward="true" selection-start-line="54" selection-start-column="30" selection-end-line="54" selection-end-column="30" />
+                  <caret line="54" column="30" lean-forward="false" selection-start-line="54" selection-start-column="30" selection-end-line="54" selection-end-column="30" />
                   <folding />
                 </state>
               </provider>
@@ -161,8 +159,8 @@
           <file leaf-file-name="holiday.less" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/styles/components/holiday.less">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="350">
-                  <caret line="101" column="25" lean-forward="false" selection-start-line="101" selection-start-column="25" selection-end-line="101" selection-end-column="25" />
+                <state relative-caret-position="581">
+                  <caret line="219" column="23" lean-forward="true" selection-start-line="219" selection-start-column="23" selection-end-line="219" selection-end-column="23" />
                   <folding>
                     <element signature="e#71#288#0" expanded="false" />
                     <element signature="e#310#332#0" expanded="false" />
@@ -182,6 +180,12 @@
                     <element signature="e#22877#22934#0" expanded="false" />
                     <element signature="e#22955#23196#0" expanded="false" />
                     <element signature="e#22982#23011#0" expanded="false" />
+                    <element signature="e#24075#47826#0" expanded="false" />
+                    <element signature="e#24184#47793#2" expanded="true" />
+                    <element signature="e#47853#72624#0" expanded="false" />
+                    <element signature="e#47921#72598#2" expanded="true" />
+                    <element signature="e#72652#97588#0" expanded="false" />
+                    <element signature="e#72720#97581#2" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -292,7 +296,6 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -411,6 +414,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -517,7 +521,9 @@
       <updated>1490600351384</updated>
       <workItem from="1490600352870" duration="5666000" />
       <workItem from="1490662220230" duration="56354000" />
-      <workItem from="1490955351635" duration="19000" />
+      <workItem from="1490955351635" duration="93000" />
+      <workItem from="1490955473570" duration="114000" />
+      <workItem from="1491008895693" duration="7397000" />
     </task>
     <task id="LOCAL-00001" summary="add holiday part">
       <created>1490694220948</created>
@@ -540,11 +546,18 @@
       <option name="project" value="LOCAL" />
       <updated>1490867200741</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="add holiday part4">
+      <created>1490955384741</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1490955384741</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="62039000" />
+    <option name="totallyTimeSpent" value="69624000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -554,8 +567,8 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30802602" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -579,11 +592,12 @@
     <MESSAGE value="add holiday part" />
     <MESSAGE value="add holiday part2" />
     <MESSAGE value="add holiday part3" />
-    <option name="LAST_COMMIT_MESSAGE" value="add holiday part3" />
+    <MESSAGE value="add holiday part4" />
+    <option name="LAST_COMMIT_MESSAGE" value="add holiday part4" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <option name="time" value="2" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -618,6 +632,12 @@
             <element signature="e#22877#22934#0" expanded="false" />
             <element signature="e#22955#23196#0" expanded="false" />
             <element signature="e#22982#23011#0" expanded="false" />
+            <element signature="e#24075#47826#0" expanded="false" />
+            <element signature="e#24184#47793#2" expanded="true" />
+            <element signature="e#47853#72624#0" expanded="false" />
+            <element signature="e#47921#72598#2" expanded="true" />
+            <element signature="e#72652#97588#0" expanded="false" />
+            <element signature="e#72720#97581#2" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -875,7 +895,7 @@
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1350">
-          <caret line="54" column="30" lean-forward="true" selection-start-line="54" selection-start-column="30" selection-end-line="54" selection-end-column="30" />
+          <caret line="54" column="30" lean-forward="false" selection-start-line="54" selection-start-column="30" selection-end-line="54" selection-end-column="30" />
           <folding />
         </state>
       </provider>
@@ -963,7 +983,7 @@
     <entry file="file://$PROJECT_DIR$/src/components/holiday/stay.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1700">
-          <caret line="109" column="18" lean-forward="true" selection-start-line="109" selection-start-column="18" selection-end-line="109" selection-end-column="47" />
+          <caret line="109" column="18" lean-forward="false" selection-start-line="109" selection-start-column="18" selection-end-line="109" selection-end-column="47" />
           <folding>
             <element signature="n#div#0;n#transition-group#0;n#div#1;n#section#0;n#div#1;n#template#0;n#!!top" expanded="false" />
             <element signature="n#div#1;n#transition-group#0;n#div#1;n#section#0;n#div#1;n#template#0;n#!!top" expanded="false" />
@@ -1000,10 +1020,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/vacation/vacation.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="164" column="50" lean-forward="true" selection-start-line="164" selection-start-column="50" selection-end-line="164" selection-end-column="50" />
+          <folding>
+            <element signature="n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#div#2;n#div#0;n#template#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/styles/components/holiday.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="101" column="25" lean-forward="false" selection-start-line="101" selection-start-column="25" selection-end-line="101" selection-end-column="25" />
+        <state relative-caret-position="581">
+          <caret line="219" column="23" lean-forward="true" selection-start-line="219" selection-start-column="23" selection-end-line="219" selection-end-column="23" />
           <folding>
             <element signature="e#71#288#0" expanded="false" />
             <element signature="e#310#332#0" expanded="false" />
@@ -1023,18 +1054,12 @@
             <element signature="e#22877#22934#0" expanded="false" />
             <element signature="e#22955#23196#0" expanded="false" />
             <element signature="e#22982#23011#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/vacation/vacation.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="207" column="22" lean-forward="true" selection-start-line="207" selection-start-column="22" selection-end-line="207" selection-end-column="22" />
-          <folding>
-            <element signature="n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#div#0;n#template#0;n#!!top" expanded="false" />
-            <element signature="n#div#2;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="e#24075#47826#0" expanded="false" />
+            <element signature="e#24184#47793#2" expanded="true" />
+            <element signature="e#47853#72624#0" expanded="false" />
+            <element signature="e#47921#72598#2" expanded="true" />
+            <element signature="e#72652#97588#0" expanded="false" />
+            <element signature="e#72720#97581#2" expanded="true" />
           </folding>
         </state>
       </provider>
